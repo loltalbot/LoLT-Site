@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LoLT Security Systems</title>
+<style>
+:root{--bg:#040c24;--text:#eaf3ff;--muted:#9db6d8;--accent:#5cc8ff;--glow:rgba(92,200,255,.55);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;overflow-x:hidden;position:relative}
+.bg{position:fixed;inset:0;z-index:0;background:
+radial-gradient(circle at 18% 30%,rgba(40,100,220,.55),transparent 45%),
+radial-gradient(circle at 80% 60%,rgba(20,80,200,.45),transparent 40%),
+radial-gradient(circle at 50% 100%,rgba(10,40,120,.6),transparent 50%),
+linear-gradient(160deg,#071a4a,#040c24 70%)}
+.bokeh span{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(110,170,255,.35),rgba(110,170,255,0) 70%)}
+.bin{position:absolute;top:0;bottom:0;width:1.2em;font:14px/1.5 ui-monospace,Menlo,Consolas,monospace;color:rgba(150,200,255,.22);word-break:break-all;overflow:hidden;white-space:normal}
+main{position:relative;z-index:1;min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:2rem;max-width:1100px;margin:0 auto;padding:4rem 1.5rem}
+.brand{font-size:.85rem;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin:0 0 1.2rem}
+h1{font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.05;margin:0 0 1.2rem;font-weight:700}
+p.lead{font-size:1.2rem;color:var(--muted);max-width:30ch;margin:0 0 2rem;line-height:1.5}
+a.btn{display:inline-block;padding:.9rem 1.6rem;border:1px solid var(--accent);border-radius:999px;color:var(--text);text-decoration:none;background:rgba(92,200,255,.12);box-shadow:0 0 24px rgba(92,200,255,.25);transition:background .2s}
+a.btn:hover{background:rgba(92,200,255,.28)}
+.lock{display:flex;justify-content:center}
+.lock svg{width:min(100%,380px);height:auto;filter:drop-shadow(0 0 18px var(--glow))}
+footer{position:relative;z-index:1;text-align:center;color:var(--muted);font-size:.8rem;padding:0 1rem 2rem}
+@media(max-width:760px){main{grid-template-columns:1fr;text-align:center;padding-top:3rem;min-height:auto}p.lead{margin-inline:auto}.lock{order:-1}.lock svg{width:220px}}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+  <div class="bokeh">
+    <span style="left:30%;top:14%;width:70px;height:70px"></span>
+    <span style="left:8%;top:60%;width:130px;height:130px"></span>
+    <span style="left:42%;top:72%;width:90px;height:90px"></span>
+    <span style="left:55%;top:20%;width:50px;height:50px"></span>
+    <span style="left:20%;top:85%;width:60px;height:60px"></span>
+  </div>
+  <div class="bin" style="left:58%">0101100010110100101100101101</div>
+  <div class="bin" style="left:72%">1001011010010110100101101001</div>
+  <div class="bin" style="left:93%">0110100101101001011010010110</div>
+</div>
+
+<main>
+  <section>
+    <p class="brand">LoLT Security Systems</p>
+    <h1>Security installation for your home.</h1>
+    <p class="lead">A security installation company for residential customers.</p>
+    <a class="btn" href="mailto:LoLTSecuritySystems@gmail.com">Get in touch</a>
+  </section>
+  <div class="lock" aria-hidden="true">
+    <svg viewBox="0 0 300 340" fill="none" stroke="#7fd6ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M85 150V105a65 65 0 0 1 130 0v45" stroke-width="12" opacity=".9"/>
+      <path d="M100 150V108a50 50 0 0 1 100 0v42" stroke-width="2" opacity=".6"/>
+      <rect x="40" y="150" width="220" height="165" rx="18" fill="rgba(20,70,160,.25)" stroke-width="4"/>
+      <g stroke-width="1.8" opacity=".75">
+        <path d="M55 175h50l15 15h30M55 215h35l12-12M60 270h45l15-15M245 175h-45l-12 12M245 225h-40l-14 14M240 285h-50l-14-14M70 300v-25M230 300v-30M150 165v18M120 190v22l-18 18"/>
+      </g>
+      <g fill="#7fd6ff" stroke="none"><circle cx="55" cy="175" r="3.5"/><circle cx="55" cy="215" r="3.5"/><circle cx="60" cy="270" r="3.5"/><circle cx="245" cy="175" r="3.5"/><circle cx="245" cy="225" r="3.5"/><circle cx="240" cy="285" r="3.5"/><circle cx="150" cy="165" r="3.5"/></g>
+      <path d="M150 205a20 20 0 0 0-10 37l-8 40h36l-8-40a20 20 0 0 0-10-37z" fill="rgba(127,214,255,.3)" stroke-width="4"/>
+    </svg>
+  </div>
+</main>
+<footer>&copy; LoLT Security Systems</footer>
+</body>
+</html>
